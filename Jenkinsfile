@@ -8,5 +8,10 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('test') {
+            steps {
+                sh 'node server.js'
+            }
+        }
     }
 }
